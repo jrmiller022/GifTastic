@@ -16,3 +16,16 @@ body {
 #buttons {
     padding-bottom: 20px;
 }
+
+#gifArea {
+	margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+	flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+p {
+    font-weight: bold;
+}

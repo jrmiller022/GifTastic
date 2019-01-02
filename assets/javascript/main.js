@@ -1,5 +1,5 @@
 //Variable of Topics.
-var topics = ["Jeep Wrangler", "Chevrolet", "Ford", "Nissan", "Honda"];
+var topics = ["Jeep Wrangler", "Chevrolet", "Ford", "Nissan", "Honda", "BMW"];
 
 //User clicks buttons to generate gifs.
 $("button").on("click", function(){
@@ -14,18 +14,18 @@ $("button").on("click", function(){
         for(var i = 0; i<response.data.length; i++){
             var vehicalDiv = $("<div>");
             var p = $("<p>").text("Rating: "+response.data[i].rating);
-            var vechalImage = $("<img>");
-            vechalImage.attr("src", response.data[i].images.fixed_height.url);
+            var vehicalImage = $("<img>");
+            vehicalImage.attr("src", response.data[i].images.fixed_height.url);
             vehicalDiv.prepend(p);
-            vehicalDiv.prepend(vechalImage);
+            vehicalDiv.prepend(vehicalImage);
             $("#gifArea").prepend(vehicalDiv); 
     }
 })
 
 //Create an IF statement for still.
-$("#gifArea").on("click", function() {
+$("<img>").on("click", function() {
     var state = $(this).attr("data-state");
-    console.log(state);
+    console.log(this);
       
 //Check if the variable state is equal to still
     if (state === "still") {
@@ -40,3 +40,4 @@ $("#gifArea").on("click", function() {
     }
     })
 })
+
