@@ -1,10 +1,9 @@
 //Variable of Topics.
-var topics = ["Jeep Wrangler", "Chevrolet", "Ford", "Nissan", "Honda", "BMW"];
+var topics = ["Jeep Wrangler", "Chevrolet", "Ford", "Nissan", "Honda"];
 
 //User clicks buttons to generate gifs.
 $("button").on("click", function(){
-    var x = $(this).data("vehical");
-    console.log(x);
+    var x = $(this).data("vehicle");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     x + "&api_key=dc6zaTOxFJmzC&limit=10";
 
@@ -12,13 +11,13 @@ $("button").on("click", function(){
     $.ajax({url:queryURL,method:"GET"})
         .done(function(response){
         for(var i = 0; i<response.data.length; i++){
-            var vehicalDiv = $("<div>");
+            var vehicleDiv = $("<div>");
             var p = $("<p>").text("Rating: "+response.data[i].rating);
-            var vehicalImage = $("<img>");
-            vehicalImage.attr("src", response.data[i].images.fixed_height.url);
-            vehicalDiv.prepend(p);
-            vehicalDiv.prepend(vehicalImage);
-            $("#gifArea").prepend(vehicalDiv); 
+            var vehicleImage = $("<img>");
+            vehicleImage.attr("src", response.data[i].images.fixed_height.url);
+            vehicleDiv.prepend(p);
+            vehicleDiv.prepend(vehicleImage);
+            $("#gifArea").prepend(vehicleDiv); 
     }
 })
 
