@@ -4,20 +4,6 @@ $(document).ready(function() {
 
 var topics = ["Jeep Wrangler", "Chevrolet", "Ford", "Nissan", "Honda"];
 
-// addVehicle button event
-
-$("#add-Vehicle").on("click", function(){
-
-// grabs the user vehicle input
-    var topics = $("#vehicle-input").val().trim();
-    
-// that input is now added to the array
-    topics.push(x);
-    
-// the makeButtons function is called, which makes buttons for vehicles.
-	makeButtons();
-})
-
 //User clicks buttons to generate gifs.
 $("button").on("click", function(){
 
