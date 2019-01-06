@@ -45,7 +45,7 @@ $("#add-vehicle").on("click", function(event){
     event.preventDefault();
 
     var topic = $("#vehicle-input").val().trim();
-    $("#topic-input").val("");
+    $("#add-vehicle").val("");
     topics.push(topic);
 
     showButtons();
