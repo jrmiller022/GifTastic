@@ -12,4 +12,4 @@
 
 6. link to page https://jrmiller022.github.io/GifTastic/
 
-![alt text](/assets/images/scree-shot.png).
+![alt text](/assets/images/screen-shot.png).
