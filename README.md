@@ -8,4 +8,8 @@
 
 4. You can also add your vehicle in the side search. 
 
-5. link to page https://jrmiller022.github.io/GifTastic/
+5. App was built with HTML, CSS and javascript. 
+
+6. link to page https://jrmiller022.github.io/GifTastic/
+
+![alt text](/assets/images/scree-shot.png).
