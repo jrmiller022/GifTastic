@@ -31,11 +31,11 @@ $(document).ready(function () {
     });
 })
 
-    //User clicks buttons to generate gifs.
-    $("button").on("click", function () {
+//User clicks buttons to generate gifs.
+$("button").on("click", function () {
 
     var topic = $(this).data("vehicle");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=tvPQjKn3MnAfxOxO9lle4f3V9XjJSm8q&limit=10";
 
     //AJAX call function.
     $.ajax({
@@ -67,7 +67,7 @@ $(document).ready(function () {
 })
 
 
-    $(document).on("click", "img", moveGif);
+$(document).on("click", "img", moveGif);
 //Create an IF statement for still.
 function moveGif() {
     var state = $(this).attr('data-state');
